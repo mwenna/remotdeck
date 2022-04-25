@@ -9,14 +9,19 @@ const cookieParser = require('cookie-parser');
 dotenv.config({ path: './.env'});
 
 const app = express();
+const port = process.env.PORT || 5000
 
+let db;
 // connects to remotedeck database
-const db = mysql.createConnection({
+if (process.env.JAWSDB_URL) {
+  db = mysql.createConnection(process.env.JAWSDB_URL);
+} else {
+ db = mysql.createConnection({
   host: process.env.DATABASE_HOST,
   user: process.env.DATABASE_USER,
   password: process.env.DATABASE_PASSWORD,
   database: process.env.DATABASE
-});
+}); }
 
 // error or successful connection to remotedeck database
 db.connect( (error) => {
