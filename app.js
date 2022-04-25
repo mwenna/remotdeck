@@ -9,15 +9,13 @@ const cookieParser = require('cookie-parser');
 dotenv.config({ path: './.env'});
 
 const app = express();
-const port = process.env.PORT || 5000
-
 
 const db = mysql.createConnection({
   host: process.env.DATABASE_HOST,
   user: process.env.DATABASE_USER,
   password: process.env.DATABASE_PASSWORD,
   database: process.env.DATABASE
-}); 
+});
 
 // error or successful connection to remotedeck database
 db.connect( (error) => {
@@ -48,6 +46,6 @@ app.use('/auth', require('./routes/auth'));
 
 
 
-app.listen(5000, () => {
-  console.log("server successfully started on port 4000");
+app.listen(process.env.PORT || PORT, () => {
+  console.log("server successfully started on port ${PORT}");
 })
