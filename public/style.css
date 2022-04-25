@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital@1&display=swap');
+
+body {
+  background-color: #599eee;
+}
+
+nav {
+  background-color: #448ada;
+  color: #448ada;
+  padding: 5px 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+  font-family: 'Cabin', sans-serif;
+  font-size: 20px;
+  font-weight: bolder;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav li a {
+  color: #123C69;
+  text-decoration: none;
+  padding: 5px 8px;
+}
+
+nav li a:hover {
+  color: #f5c43b;
+  text-decoration: none;
+}
+
+
+.avatar-ctn {
+  background-color:transparent;
+  text-align: center;
+}
+
+.avatar {
+  width: 75%;
+  border-bottom: 1px solid rgba(0,0,0,0.125);
+}
+
+/* REGISTER CSS */
+
+.card {
+    background-color:transparent;
+    font-family: 'Cabin', sans-serif;
+    font-size: 20px;
+    color: #000000;
+    text-align: left;
+    border-color: transparent;
+}
+
+.card-body {
+  font-family: 'Cabin', sans-serif;
+  font-size: 20px;
+}
+
+.btn-primary {
+    appearance: button;
+    background-color: #448ada;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Cabin', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: .8px;
+    line-height: 20px;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 13px 16px;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 100%;
+  }
+
+  .btn-primary:after {
+    background-clip: padding-box;
+    background-color: #448ada;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    bottom: -4px;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+  }
+
+  .btn-primary:focus {
+    user-select: auto;
+  }
+
+  .btn-primary:hover:not(:disabled) {
+    filter: brightness(1.1);
+  }
+
+  .btn-primary:disabled {
+    cursor: auto;
+  }
+
+.alert
+{
+  text-align: center;
+  padding: 20px;
+  background-color: #f44336; /* Red */
+  color: white;
+  margin-bottom: 15px;
+}
+
+/* HOME CSS */
+
+.jumbotron {
+  color:#FFFFFF;
+  font-family: 'Cabin', sans-serif;
+  text-align: center;
+
+}
+
+.lead {
+  color:#000000;
+}
+.card-title{
+  font-size: 50px;
+  text-align: justify;
+  color: #FAFAFA;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 17px;
+  text-align: justify;
+  color: #000000;
+}
+
+.jumbotron {
+  background-color: transparent;
+  padding: 30px;
+}

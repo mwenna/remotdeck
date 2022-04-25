@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital@1&display=swap');
+
+body {
+  background-color: #599eee;
+}
+
+nav {
+  background-color: #448ada;
+  color: #448ada;
+  padding: 5px 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+  font-family: 'Cabin', sans-serif;
+  font-size: 20px;
+  font-weight: bolder;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav li a {
+  color: #123C69;
+  text-decoration: none;
+  padding: 5px 8px;
+}
+
+nav li a:hover {
+  color: #AC3B61;
+  text-decoration: none;
+}
+
+
+:root {
+  --hue-neutral: 200;
+  --hue-wrong: 0;
+  --hue-correct: 145;
+}
+
+body {
+  --hue: var(--hue-neutral);
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(var(--hue), 100%, 20%);
+}
+
+body.correct {
+  --hue: var(--hue-correct);
+}
+
+body.wrong {
+  --hue: var(--hue-wrong);
+}
+
+.container {
+  width: 1500px;
+  max-width: 80%;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 0 10px 2px;
+}
+
+.btn-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.btn {
+  --hue: var(--hue-neutral);
+  border: 1px solid hsl(var(--hue), 100%, 30%);
+  background-color: hsl(var(--hue), 100%, 50%);
+  appearance: button;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Cabin', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .8px;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.btn:hover {
+  border-color: black;
+}
+
+.btn.correct {
+  --hue: var(--hue-correct);
+  color: black;
+}
+
+.btn.wrong {
+  --hue: var(--hue-wrong);
+}
+
+.start-btn, .next-btn {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hide {
+  display: none;
+}
+
+.jumbotron {
+  color:#FFFFFF;
+  font-family: 'Cabin', sans-serif;
+  text-align: center;
+
+}
+
+.lead {
+  color:#000000;
+}
+.card-title{
+  font-size: 50px;
+  text-align: justify;
+  color: #FAFAFA;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 17px;
+  text-align: justify;
+  color: #000000;
+}
+
+.jumbotron {
+  background-color: transparent;
+  padding: 30px;
+}
+
+.card {
+    background-color:transparent;
+    font-family: 'Cabin', sans-serif;
+    font-size: 20px;
+    color: #000000;
+    text-align: left;
+    border-color: transparent;
+}
+
+.card-body {
+  font-family: 'Cabin', sans-serif;
+  font-size: 20px;
+}

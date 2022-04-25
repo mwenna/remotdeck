@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="/style.css">
+  <title>RemoteDeck | Home</title>
+</head>
+<body>
+  <nav>
+    <h4><img src="/RemoteDeck.png" height="100px"/></h4>
+    <ul>
+      <li><a href="/">Home</a></li>
+      {{#if user }}
+        <li><a href="/profile">Profile</a></li>
+        <li><a href="/courses">Courses</a></li>
+        <li><a href="/auth/logout">Logout</a></li>
+      {{else}}
+        <li><a href="/about">About Us</a></li>
+        <li><a href="/login">Login</a></li>
+        <li><a href="/register">Register</a></li>
+      {{/if}}
+    </ul>
+  </nav>
+
+    <div class="container mt-4">
+      <br><br><br>
+  <div class="card-group">
+    <div class="card">
+      <img class="card-img-top" src="aboutpage/image1.png" alt="Card image cap">
+      <div class="card-body">
+        <p class="card-text">It is clear that remote working is now on the rise -  allowing us greater flexibility on how we manage our time.</p>
+      </div>
+    </div>
+    <div class="card">
+        <p class="card-text">On the down-side, cyber security has become an even larger threat for firms worldwide in this new remote working context.</p>
+      <div class="card-body">
+              <img class="card-img-top" src="aboutpage/image2.png" alt="Card image cap">
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-img-top" src="aboutpage/image3.png" alt="Card image cap">
+      <div class="card-body">
+        <p class="card-text">We educate about the simple security steps that should be taken to limit the likelihood of you falling victim to a cyber assault or phishing scam.</p>
+      </div>
+    </div>
+  </div> </div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+</body>
+</html>

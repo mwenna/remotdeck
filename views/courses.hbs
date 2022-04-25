@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="/style.css">
+  <title>RemoteDeck</title>
+</head>
+<body>
+  <nav>
+    <h4><img src="/RemoteDeck.png" height="100px"/></h4>
+    <ul>
+      <li><a href="/">Home</a></li>
+      {{#if user }}
+        <li><a href="/profile">Profile</a></li>
+        <li><a href="/courses">Courses</a></li>
+        <li><a href="/auth/logout">Logout</a></li>
+      {{else}}
+        <li><a href="/about">About Us</a></li>
+        <li><a href="/login">Login</a></li>
+        <li><a href="/register">Register</a></li>
+      {{/if}}
+    </ul>
+  </nav>
+  <div class="container mt-4">
+    <div class="jumbotron">
+      <br><br><br>
+      <h1 class="display-4">Our Training Packages</h1>
+              <br>
+      <p class="lead">We have two different training programmes to choose from. Our personal and commercial security courses are designed to make you feel secure while you work.</p> <br>
+      <hr class="my-4">
+    </div>
+
+  <div class="container mt-4">
+  <div class="list-group">
+    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+      <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1">Commercial Security</h5>
+      </div>
+    </a>
+    <a href="/commercialsecuritycourse" class="list-group-item list-group-item-action flex-column align-items-start">
+      <div class="d-flex w-100 justify-content-between">
+      </div>
+      <p class="mb-1">This training course covers phishing and ransomware scams, the use of personal devices and unencrypted file sharing.</p>
+      <small class="text-muted">Click here to take this course</small>
+    </a>
+
+  </div> </div>
+      <br>
+  <div class="container mt-4">
+  <div class="list-group">
+    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+      <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1">Personal Security</h5>
+      </div>
+    </a>
+    <a href="/personalsecuritycourse" class="list-group-item list-group-item-action flex-column align-items-start">
+      <div class="d-flex w-100 justify-content-between">
+      </div>
+      <p class="mb-1">This training course covers VPNs, Wi-Fi encryption, weak passwords and securing home networks.</p>
+      <small class="text-muted">Click here to take this course</small>
+    </a>
+    </a>
+  </div> </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+</body>
+</html>
